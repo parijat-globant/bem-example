@@ -1,0 +1,41 @@
+$menu-text-color: #737392;
+$menu-bg-color: #eee;
+$menu-item-selected-bg-color :#89bdd3;
+$menu-item-selected-text-color :#fff;
+$menu-border-color: #ccc;
+$menu-items-bg-color: #fff;
+
+.menu{
+    background-color: $menu-bg-color;
+    width: 170px;
+    border: 2px solid $menu-border-color;
+    border-radius: 4px;
+    padding: 10px;
+    &__title{
+        font-size:16px;
+        font-weight: normal;
+        margin: 0;
+        padding:10px 0 20px;
+    }
+    &__items{
+        border: 1px solid $menu-border-color;
+        border-radius: 4px;
+        background-color: $menu-items-bg-color;
+    }
+    &__item{
+
+        display: block;
+        padding: 5px 10px;
+        margin: 10px;
+        color: $menu-text-color;
+        &--selected{
+            background-color: $menu-item-selected-bg-color;
+            color: $menu-item-selected-text-color;
+        }
+        &:hover{
+            background-color: $menu-item-selected-bg-color;
+            color: $menu-item-selected-text-color;
+        }
+    }
+
+}
