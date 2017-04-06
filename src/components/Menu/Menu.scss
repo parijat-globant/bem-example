@@ -1,9 +1,5 @@
-$menu-text-color: #737392;
-$menu-bg-color: #eee;
-$menu-item-selected-bg-color :#89bdd3;
-$menu-item-selected-text-color :#fff;
-$menu-border-color: #ccc;
-$menu-items-bg-color: #fff;
+
+@import '../../styles/variables.scss';
 
 .menu{
     background-color: $menu-bg-color;
@@ -21,6 +17,7 @@ $menu-items-bg-color: #fff;
         border: 1px solid $menu-border-color;
         border-radius: 4px;
         background-color: $menu-items-bg-color;
+        cursor: pointer;
     }
     &__item{
 
@@ -28,10 +25,18 @@ $menu-items-bg-color: #fff;
         padding: 5px 10px;
         margin: 10px;
         color: $menu-text-color;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 56ef47c024903cd24df948ad9a424c9bb8cc7bd2
         &--selected{
             background-color: $menu-item-selected-bg-color;
             color: $menu-item-selected-text-color;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 56ef47c024903cd24df948ad9a424c9bb8cc7bd2
         &:hover{
             background-color: $menu-item-selected-bg-color;
             color: $menu-item-selected-text-color;

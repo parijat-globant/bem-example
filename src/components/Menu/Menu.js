@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-//simport logo from './logo.svg';
 import './Menu.css';
 import MenuItem from '../MenuItem/MenuItem';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux'
-import * as MenuStoreAction from '../../actions'
+import * as MenuStoreAction from '../../actions/menu'
 
 class Menu extends Component {
 
@@ -16,8 +15,7 @@ class Menu extends Component {
         <nav className="menu__items">
           {menuItems.map((tabNode, i) => <MenuItem key={i} node={tabNode} changeBgnd={actions.makeMenuItems}/>)}
          </nav>
-  </section>
-
+      </section>
     );
   }
 }
