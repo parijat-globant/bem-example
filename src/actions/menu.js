@@ -4,3 +4,13 @@ export function makeMenuItems(name){
 		name: name
 	}
 }
+
+// const makeMenuItems = (name) => ({
+//     type : "MAKE_MENU",
+// 	name: name
+// });
+
+// module.exports = {
+//     makeMenuItems
+// }
+

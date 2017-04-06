@@ -1,6 +1,5 @@
 
 export default function(state= {},action){
-  console.log(action.name);
   switch(action.type){
     case 'MAKE_MENU' :
       var newMenu=[];
@@ -10,7 +9,7 @@ export default function(state= {},action){
         } else if (menu.isSelected) {
           menu.isSelected = false;
         }
-        newMenu.push(menu);
+        return newMenu.push(menu);
       });
       return  Object.assign({},{isMenuItem :state.isMenuItem},{menuItems : newMenu});
 
